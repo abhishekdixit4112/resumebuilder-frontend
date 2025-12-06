@@ -149,9 +149,9 @@ const Form = () => {
           onClick={() => {
             if (page === FormTitle.length - 1) {
               axios
-                .post("http://localhost:4000/create-pdf", formData)
+                .post("https://resumebuilder-backend-1-dtqm.onrender.com/create-pdf", formData)
                 .then(() =>
-                  axios.get("http://localhost:4000/fetch-pdf", {
+                  axios.get("https://resumebuilder-backend-1-dtqm.onrender.com/fetch-pdf", {
                     responseType: "blob",
                   })
                 )
